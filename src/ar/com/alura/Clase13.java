@@ -61,6 +61,9 @@ public class Clase13 {
 			listaAlumnos.forEach(alumno -> {
 				System.out.println(alumno);
 			});
+			
+			//REMUEVE SOLO SI EXISTE, SINO MANDA UN AVISO
+			System.out.println(listaAlumnos.stream().filter(alumno -> alumno.equalsIgnoreCase("Leonel")).findFirst().orElse("No Existe"));
 		}
 		
 }
