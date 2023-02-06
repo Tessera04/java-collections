@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 public class Curso implements Comparable<Curso>{
@@ -11,6 +12,7 @@ public class Curso implements Comparable<Curso>{
 	private int tiempo;
 	private List<Aula> AulaList = new ArrayList<>();
 	private Collection<Alumno> alumnos = new HashSet<>();
+	//private Collection<Alumno> alumnos = new LinkedHashSet<>();
 	
 	public Curso(String nombre, int tiempo) {
 		this.nombre = nombre;
