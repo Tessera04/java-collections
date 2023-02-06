@@ -7,7 +7,7 @@ public class Alumno {
 		
 		public Alumno(String nombre, String codigo) {
 			this.nombre = nombre;
-			this.codigo = codigo;
+			this.setCodigo(codigo);
 		}
 		
 		public String getNombre() {
@@ -29,5 +29,13 @@ public class Alumno {
 		@Override
 		public int hashCode() {
 			return this.nombre.hashCode();
+		}
+
+		public String getCodigo() {
+			return codigo;
+		}
+
+		public void setCodigo(String codigo) {
+			this.codigo = codigo;
 		}
 }
