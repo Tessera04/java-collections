@@ -10,10 +10,10 @@ import java.util.stream.Collectors;
 public class Clase3 {
 	public static void main(String[] args) {
 		
-		String Curso1 = "Geometria";
-		String Curso2 = "Fisica";
-		String Curso3 = "Historia";
-		String Curso4 = "Ingles";
+		String Curso1 = "Geometria2";
+		String Curso2 = "Fisica1";
+		String Curso3 = "Historia3";
+		String Curso4 = "Ingles4";
 		String Curso5 = "=======";
 		
 		ArrayList<String> cursos = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Clase3 {
 		//Option 2
 		
 		//ORDEN MENOR A MAYOR
-		cursos.sort(Comparator.reverseOrder());
+		cursos.sort(Comparator.naturalOrder());
 		
 		System.out.println(cursos);
 		
@@ -55,5 +55,10 @@ public class Clase3 {
 		
 		System.out.println(cursosList);
 		
+		//ORDEN MAYOR A MENOR
+		
+		List<String> cursosList2 = cursos.stream().sorted(Comparator.reverseOrder()).collect(Collectors.toList());
+		
+		System.out.println(cursosList2);
 	}
 }
