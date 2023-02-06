@@ -51,6 +51,7 @@ public class Clase8 {
 			
 			//ARRAYLIST (NO CREA UNA RELACION ENTRE LAS LISTAS A -> B -> C)
 			
+			//LOS GET SON MAS RAPIDOS EN ARRAYLIST QUE EN LINKEDLIST
 		};
 	}
 }
