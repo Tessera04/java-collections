@@ -5,6 +5,7 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedHashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Map;
@@ -16,6 +17,7 @@ public class Curso implements Comparable<Curso>{
 	private Collection<Alumno> alumnos = new HashSet<>();
 	//private Collection<Alumno> alumnos = new LinkedHashSet<>();
 	private Map<String, Alumno> alumnoMap = new HashMap<>();
+	//private Map<String, Alumno> alumnoMap2 = new LinkedHashMap<>();
 	
 	public Curso(String nombre, int tiempo) {
 		this.nombre = nombre;
